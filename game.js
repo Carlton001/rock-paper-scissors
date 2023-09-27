@@ -65,4 +65,10 @@ const playRound = () => {
     console.log(determineWinner(playerSelection, computerSelection));
 }
 
-playRound();
+const game = () => {
+    for(let i = 0; i < 5; i++){
+        playRound();
+    }
+}
+
+game();
