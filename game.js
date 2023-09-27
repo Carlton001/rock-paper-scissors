@@ -6,7 +6,7 @@ const getComputerChoice = () => {
     return choice;
 }
 
-
+// to check the player input
 const getPlayerChoice = (choice) => {
 
     let mainChoice = choice.toLowerCase();
@@ -17,7 +17,7 @@ const getPlayerChoice = (choice) => {
     }
 }
 
-
+// to compare the choices of the user and the computer
 const determineWinner = (playerSelection, computerSelection) => {
     let win = "you win!";
     let lose = "you lose!";
@@ -54,6 +54,7 @@ const determineWinner = (playerSelection, computerSelection) => {
 
 const playRound = () => {
 
+    // the user can change the "rock" to any choice he/she prefers
     const playerSelection = getPlayerChoice("rock");
     const computerSelection = getComputerChoice();
     
